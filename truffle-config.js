@@ -14,12 +14,10 @@ module.exports = {
     //   port: 8545,
     // },
     ropsten: {
-      // networkCheckTimeout: 20000,
       provider: () =>
         new HDWalletProvider(
           process.env.MNEMONIC,
           "https://ropsten.infura.io/v3/" + process.env.INFURA_API_KEY
-          // "https://rinkeby.infura.io/v3/14a724eeca4144bd94541c1edf41c011"
         ),
       network_id: 3,
        
